@@ -6,7 +6,7 @@
   --style-color: #2196f3;
   --gap: 30px;
   --section-gap: 50px;
-  --social-links-color: #AFB1B8;
+  --social-links-color: #afb1b8;
 }
 
 body {
@@ -258,9 +258,10 @@ img {
   display: flex;
   background: #f5f4fa;
   border-radius: 4px;
+  align-items: center;
 
   margin-bottom: var(--gap);
-  max-height: 120px;
+  height: 120px;
 }
 
 .feature-icon {
@@ -309,6 +310,9 @@ section-title {
   margin-top: var(--gap);
 
   background-color: var(--accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .userpic {
@@ -332,12 +336,29 @@ section-title {
   padding-bottom: 30px;
 }
 
-.social-icon {
+.img-container {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 206px;
-  max-height: 44px;
+  justify-content: center;
+
+  /* max-width: 44px;
+  max-height: 44px; */
+}
+
+.social-link {
+  display: flex;
+  border: none;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link:hover {
+  background-color: var(--style-color);
+}
+
+.social-icon {
   fill: var(--social-links-color);
 
   cursor: pointer;
@@ -346,7 +367,10 @@ section-title {
 .social-icon:focus,
 .social-icon:hover {
   fill: var(--accent-color);
-  background-color: var(--style-color);
+}
+
+.card-userpic .social-link + .social-link {
+  margin-left: 10px;
 }
 
 /* Buttons*/
