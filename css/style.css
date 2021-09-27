@@ -352,6 +352,7 @@ section-title {
   width: 44px;
   justify-content: center;
   align-items: center;
+  color: var(--social-links-color);
 }
 
 .social-link:hover {
@@ -359,8 +360,7 @@ section-title {
 }
 
 .social-icon {
-  fill: var(--social-links-color);
-
+  fill: currentColor;
   cursor: pointer;
 }
 
