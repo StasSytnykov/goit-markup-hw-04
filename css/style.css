@@ -360,7 +360,6 @@ section-title {
 
 .social-icon {
   fill: currentColor;
-  cursor: pointer;
 }
 
 .card-userpic .social-link + .social-link {
@@ -388,16 +387,11 @@ section-title {
   fill: var(--social-links-color);
 }
 
-.company-icon {
-  
-}
-
-.company-link:hover {
+.company-link:hover,
+.company-link:focus {
   fill: var(--style-color);
   border-color: var(--style-color);
 }
-
-
 
 /* Buttons*/
 .button {
@@ -478,6 +472,7 @@ section-title {
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 
 .footer .footer-text {
@@ -506,4 +501,45 @@ section-title {
 
 .footer-contacts-list .list + .list {
   margin-top: 9px;
+}
+
+.social-footer {
+  margin-left: 70px;
+}
+
+.social-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+
+  margin-bottom: 20px;
+}
+
+.social-flex {
+  display: flex;
+}
+
+.footer-social-link {
+  display: flex;
+  border: none;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  color: var(--accent-color);
+  background-color: var(--style-color);
+}
+
+.footer-social-link + .footer-social-link {
+  margin-left: 10px;
 }
