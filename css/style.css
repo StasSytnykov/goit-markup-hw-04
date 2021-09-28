@@ -29,6 +29,10 @@ p {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -441,6 +445,10 @@ section-title {
   flex-basis: calc(100% / 3 - var(--gap));
   margin-left: var(--gap);
   margin-top: var(--gap);
+}
+
+.product-card .link {
+  color: inherit;
 }
 
 .img-description {
