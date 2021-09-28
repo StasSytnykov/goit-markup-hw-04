@@ -339,9 +339,6 @@ section-title {
 .img-container {
   display: flex;
   justify-content: center;
-
-  /* max-width: 44px;
-  max-height: 44px; */
 }
 
 .social-link {
@@ -355,18 +352,15 @@ section-title {
   color: var(--social-links-color);
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
+  color: var(--accent-color);
   background-color: var(--style-color);
 }
 
 .social-icon {
   fill: currentColor;
   cursor: pointer;
-}
-
-.social-icon:focus,
-.social-icon:hover {
-  fill: var(--accent-color);
 }
 
 .card-userpic .social-link + .social-link {
